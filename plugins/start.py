@@ -4,14 +4,13 @@ from pyrogram import Client, filters, __version__
 from pyrogram.enums import ParseMode
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
+import pyrogram.utils
+pyrogram.utils.MIN_CHANNEL_ID = -your channel id -1002239557483
 
 from bot import Bot
 from config import ADMINS, OWNER_ID, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT
 from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
-
-import pyrogram.utils
-pyrogram.utils.MIN_CHANNEL_ID = -your channel id -1002239557483
 
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
