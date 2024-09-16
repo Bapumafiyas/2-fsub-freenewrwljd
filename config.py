@@ -13,38 +13,38 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", ":7226830421:AAGcxySe5JSop_BQeNerQFymXpcZZcKu09E")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "22097032"))
+APP_ID = int(os.environ.get("APP_ID", "29862293"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "7bfda6a8df5abca96e5269e90a8c5c5f")
+API_HASH = os.environ.get("API_HASH", "ed2b66047d283a53433ffb4a9ef23464")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002157194885"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002256160837"))
 
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "JBLJAY")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "7115098385"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7132799559"))
 
 #Port
 PORT = os.environ.get("PORT", "8018")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Mscmafiacorporation:<8TdhoEYC2hZcGfnC>@cluster0.hxu1w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://panchalishanibigbigpvtltd:oZtI0tHJw1yWfYI4@cluster0.ee5qz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharingbybackbenc")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002239557483"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001469359304"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001911546743"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002240500177"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}</b>\n\nmuth marna band kr de dusro ko sex krte dekh muth marne maja aata kya?? cuck ho? eww bhai imagine tumhara brain itna fucked up ho chuka hai ki tum dusro ko sex krte dekh maja ata sad bhai ye sab band kr do @brainsaga if you want bot like this </a></b>")
 try:
-    ADMINS=[7115098385]
-    for x in (os.environ.get("ADMINS", "7115098385").split()):
+    ADMINS=[7132799559]
+    for x in (os.environ.get("ADMINS", "7132799559").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -65,7 +65,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "ʙᴀᴋᴋᴀ ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ ꜱᴇɴᴘᴀɪ!!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(7115098385)
+ADMINS.append(7132799559)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
